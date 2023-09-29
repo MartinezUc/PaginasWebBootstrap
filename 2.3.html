@@ -3,100 +3,267 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Práctica de Java y MySQL</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <header>
-      <div class="contenedor">
-        <div class="contenedor-logo">
-          <a href="https://www.plenumsoft.com.mx"
-            ><img src="css/img/logo.png" alt="" class="logo-plenum"
-          /></a>
+      <nav
+        class="navbar navbar-expand-md bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <img src="css/img/logo.png" alt="Logo" class="img-fluid" />
+          <h1>Plenum</h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse container-fluid"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="div-header div-header1 container-fluid">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active div-header1"
+                    aria-current="page"
+                    href="index.html"
+                    >Inicio</a
+                  >
+                </li>
+              </div>
+              <div class="div-header container-fluid">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-center"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Unidad 2 - Fundamentos de Programación
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="2.1.html"
+                        >Tema 2.1 - Bases de Datos
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="2.2.html"
+                        >Tema 2.2 - Programación Orientada a Objetos</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="2.3.html"
+                        >Tema 2.3 - Práctica de Java y MySQL</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="2.4.html"
+                        >Tema 2.4 - API</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </div>
+            </ul>
+          </div>
         </div>
-        <div class="contenedor-tema">
-          <a href="index.html" class="texto-temas">Inicio</a>
-        </div>
-      </div>
-
-      <nav>
-        <a href="#titulo1">Conexión a la Base de Datos</a>
-        <a href="#titulo2">Consulta con dos tablas</a>
-        <a href="#titulo3">Estructura MVC</a>
-        <a href="#titulo4">Programa en ejecución</a>
-        <a href="#titulo5">Tablas de la Base de Datos</a>
-        <a href="#titulo6">Diagrama de la Base de Datos</a>
       </nav>
     </header>
 
-    <main class="main">
-      <div>
-        <h1>Práctica de Java y MySQL.</h1>
-        <hr />
-      </div>
-
-      <h2 id="titulo1">Conexión a la Base de Datos.</h2>
-      <img src="assets/conex.png" alt="" width="1320" height="640" />
-      <br />
-      <br />
-      <h2 id="titulo2">Consulta con dos tablas.</h2>
-      <img src="assets/select.png" alt="" width="1312" height="638" />
-      <br />
-      <br />
-      <h2 id="titulo3">Estructura MVC.</h2>
-      <img src="assets/vista.png" alt="" width="1366" height="768" />
-      <br />
-      <br />
-      <h2 id="titulo4">Programa en ejecución.</h2>
-      <img src="assets/ejecu.png" alt="" width="1366" height="768" />
-      <br />
-      <br />
-      <h2 id="titulo5">Tablas de la Base de Datos.</h2>
-      <img src="assets/tablas.png" alt="" width="1366" height="768" />
-      <br />
-      <br />
-      <h2 id="titulo6">Diagrama de la Base de Datos.</h2>
-      <img src="assets/diagrama.png" alt="" width="1366" height="768" />
-
-      <br />
-
-      <footer class="pie-pagina">
-        <div class="grupo-1">
-          <div class="box">
-            <figure>
-              <img src="assets/logo_sinfondo.png" alt="" />
-            </figure>
+    <div class="container-fluid mt-4">
+      <div class="row">
+        <div class="col-sm-12 col-m4 col-lg-4 col-xl-3">
+          <div class="my-scroll">
+            <nav
+              id="navbar-example3"
+              class="h-100 flex-column align-items-stretch pe-4 border-end"
+            >
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link" href="#item-1">Práctica de Java y MySQL</a>
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link ms-3 my-1" href="#item-1-1"
+                    >Conexión a la Base de Datos</a
+                  >
+                  <a class="nav-link ms-3 my-1" href="#item-1-2"
+                    >Consulta con dos tablas</a
+                  >
+                  <a class="nav-link ms-3 my-1" href="#item-1-3"
+                    >Estructura MVC</a
+                  >
+                  <a class="nav-link ms-3 my-1" href="#item-1-4"
+                    >Programa en ejecución</a
+                  >
+                  <a class="nav-link ms-3 my-1" href="#item-1-5"
+                    >Tablas de la Base de Datos</a
+                  >
+                  <a class="nav-link ms-3 my-1" href="#item-1-6"
+                    >Diagrama de la Base de Datos</a
+                  >
+                </nav>
+              </nav>
+            </nav>
           </div>
+        </div>
 
-          <div class="box">
-            <h2>SOBRE NOSOTROS</h2>
-            <p>
+        <div class="col-sm-12 col-m-8 col-lg-8 col-xl-9">
+          <div
+            id="scrollableDiv"
+            data-bs-spy="scroll"
+            data-bs-target="#navbar-example3"
+            data-bs-smooth-scroll="true"
+            tabindex="0"
+          >
+            <div id="item-1">
+              <div>
+                <h1>Práctica de Java y MySQL.</h1>
+                <hr />
+              </div>
+            </div>
+            <div id="item-1-1">
+              <div>
+                <h2 id="titulo1">Conexión a la Base de Datos.</h2>
+              </div>
+              <div class="contenedor">
+                <img
+                  src="assets/conex.png"
+                  alt=""
+                  width="1320"
+                  height="640"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div id="item-1-2">
+              <div>
+                <h2 id="titulo2">Consulta con dos tablas.</h2>
+              </div>
+              <div class="contenedor">
+                <img
+                  src="assets/select.png"
+                  alt=""
+                  width="1320"
+                  height="640"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div id="item-1-3">
+              <div>
+                <h2 id="titulo3">Estructura MVC.</h2>
+              </div>
+              <div class="contenedor">
+                <img
+                  src="assets/vista.png"
+                  alt=""
+                  width="1320"
+                  height="640"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div id="item-1-4">
+              <div>
+                <h2 id="titulo4">Programa en ejecución.</h2>
+              </div>
+              <div class="contenedor">
+                <img
+                  src="assets/ejecu.png"
+                  alt=""
+                  width="1320"
+                  height="640"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div id="item-1-5">
+              <div>
+                <h2 id="titulo5">Tablas de la Base de Datos.</h2>
+              </div>
+              <div class="contenedor">
+                <img
+                  src="assets/tablas.png"
+                  alt=""
+                  width="1320"
+                  height="640"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+            <div id="item-1-6">
+              <div>
+                <h2 id="titulo6">Diagrama de la Base de Datos.</h2>
+              </div>
+              <div class="contenedor">
+                <img
+                  src="assets/diagrama.png"
+                  alt=""
+                  width="1320"
+                  height="640"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid pie-pagina">
+      <div class="row">
+        <div class="col-sm-12 col-m-4 col-lg-4 col-xl-3">
+          <figure>
+            <img src="assets/logo_sinfondo.png" alt="" class="img-fluid" />
+          </figure>
+        </div>
+        <div class="col-sm-12 col-m-4 col-lg-6 col-xl-7 mt-4 mb-4">
+          <div><h2>SOBRE NOSOTROS</h2></div>
+          <div>
+            <p class="text-center">
               Es desarrollar software que sirve como una herramienta que pueda
               apoyar una gran variedad de industrias y compañías, ayudando a
               hacer sus procesos eficientes, así como mejorar su impacto social,
               ambiental y económico.
             </p>
-            <p>
+            <p class="text-center">
               Nos especializamos en el desarrollo e integración de soluciones
               innovadoras basadas en la automatización del conocimiento práctico
             </p>
           </div>
-          <div class="box">
-            <h2>SIGUENOS</h2>
-            <div class="red-social">
-              <a href="https://www.facebook.com/plenumsoft/">
-                <img src="assets/FACEBOOK.png" alt=""
-              /></a>
-              <a href="https://twitter.com/plenumsoft"
-                ><img src="assets/TWITTER.png" alt=""
-              /></a>
-            </div>
+        </div>
+        <div class="col-sm-12 col-m-4 col-lg-2 col-xl-2 mt-4 mb-4">
+          <div><h2>SIGUENOS</h2></div>
+          <div class="red-social">
+            <a href="https://www.facebook.com/plenumsoft/">
+              <img src="assets/FACEBOOK.png" alt="" class="img-fluid"
+            /></a>
+            <a href="https://twitter.com/plenumsoft"
+              ><img src="assets/TWITTER.png" alt="" class="img-fluid"
+            /></a>
           </div>
         </div>
-        <div class="grupo-2">
-          <small>&copy; 2023 <b> - Todos los Derechos Reservados</b></small>
-        </div>
-      </footer>
-    </main>
+      </div>
+    </footer>
   </body>
 </html>

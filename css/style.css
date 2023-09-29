@@ -20,12 +20,55 @@ img {
   display: flex;
   justify-content: center;
   width: 200px;
+  padding-bottom: 20px;
 }
+
+/*Header*/
 
 header {
   top: 0;
   left: 0;
   position: sticky;
+}
+
+.div-header {
+  width: 50%;
+}
+
+.div-header1 {
+  display: flex;
+  justify-content: right;
+}
+
+/*Imagenes 2.3*/
+.contenedor {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: auto;
+  height: auto; /* Asegura que el div ocupe toda la altura visible del navegador */
+}
+
+.contenedor img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del div */
+  height: 100%; /* Asegura que la imagen ocupe todo el alto del div */
+}
+
+/*Material extra*/
+iframe {
+  display: inline-flexbox;
+  justify-content: center;
+  width: 350;
+  height: 145;
+}
+
+.div-iframe {
+  text-align: center;
+}
+
+/*Tabla*/
+.div-table {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /*Footer*/
